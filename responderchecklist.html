@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responder Check List</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Listado de Chequeos de Visitas</h1>
+    <div class="contenedor">
+
+        <form id="formulario" method="post" action="#">
+
+        <input name="checkbox" id="chk1"  type="checkbox">
+        <p>Visita</p>
+        <ul>
+            <li>001</li>
+            <li>20 febrero 2020</li>
+            <li>15:00</li>
+            <li>23121352-2</li>
+            <li id="nombre1" >Vanessa Amaro Troncoso</li>
+        </ul>
+
+        <input name="checkbox" id="chk2" type="checkbox">
+        <p>Visita</p>
+        <ul>
+            <li>002</li>
+            <li>10 julio 2020</li>
+            <li>18:00</li>
+            <li>156831213-2</li>
+            <li id="nombre2"  >Juanita Gonzalez Perez</li>
+        </ul>
+    </div>
+    <input type="button" name="Submit" value="Enviar"  onClick="selecciona()">
+    <br>
+</form>
+
+<div >
+    <ul >
+        <li id=nom1></li>
+        <li id=nom2></li>
+    </ul>
+        
+    
+</div>
+
+<script >
+    function selecciona() {
+        var checkboxes = document.getElementById("formulario").checkbox; 
+
+        var cont = 0; 
+
+        for (var x = 0; x < checkboxes.length; x++) {
+            if (checkboxes[x].checked) {
+                cont = cont + 1;
+            }
+        }
+if (cont==0) { alert("no selecciono ninguno")
+
+  
+    
+}
+
+        if (document.getElementById('chk1').checked == true) {
+
+            e= document.getElementById("nombre1").innerHTML;
+            document.getElementById('nom1').innerHTML= e;
+        }else{ document.getElementById('nom1').innerHTML =""}
+
+        if (document.getElementById('chk2').checked == true) {
+
+            f= document.getElementById("nombre2").innerHTML;
+            document.getElementById('nom2').innerHTML = f;
+        } else { document.getElementById('nom2').innerHTML = "" }
+
+    }
+</script>
+
+
+
+
+
+</body>
+
+</html>

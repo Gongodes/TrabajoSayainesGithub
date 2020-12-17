@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Listado Visitas</title>
+</head>
+
+<body>
+    <h1>Listado de visitas</h1>
+
+    <table style="width:100%" border="1px solid black" id="tabla">
+        <tr>
+            <th>ID visitas</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Rut cliente</th>
+            <th>Nombre cliente</th>
+            <th>Check</th>
+        </tr>
+
+        <tr>
+            <td>001</td>
+            <td>20 febrero 2020</td>
+            <td>15:00</td>
+            <td>23121352-2</td>
+            <td>Vanessa Amaro Troncoso</td>
+            <td style="text-align: center;"><img src="check.svg" width="20px" onclick="funcion()"></td>
+            </td>
+        </tr>
+
+        <tr>
+            <td>002</td>
+            <td>10 julio 2020</td>
+            <td>18:00</td>
+            <td>156831213-2</td>
+            <td>Juanita Gonzalez Perez</td>
+            <td style="text-align: center;"><img src="check.svg" width="20px" onclick="funcion()"></td>
+        </tr>
+
+        
+    </table>
+
+<footer><ul>
+    <li><a href="index.html">PRINCIPAL</a></li>
+    <li><a href="contacto.html">CONTACTO</a> </li>
+    <li><a href="crearcapacitacion.html">AGENDAR CAPACITACIÓN</a></li>
+    <li><a href="listarcapacitaciones.html">LISTAR CAPACITACIÓN</a></li>
+    <li><a href="listadousuarios.html">LISTADO DE USUARIOS</a></li>
+    <li><a href="crearusuario.html">CREAR USUARIO</a></li>
+    <li><a href="listadovisitas.html">LISTADO VISITAS</a></li>
+    <li><a href="responderchecklist.html">CHECKLIST</a></li>
+</ul></footer>
+
+
+<script>
+    function funcion() {
+        
+        var mensaje = confirm("¿Desea validar y modificar los chequeos de esta visita?");
+        
+        if (mensaje) {
+            alert("sera redireccionado");
+            window.location.href = "responderchecklist.html";
+        }
+        
+        
+    }
+</script>
+
+
+
+
+</body>
+
