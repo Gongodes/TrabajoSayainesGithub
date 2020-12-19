@@ -4,38 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAPACITACIONES</title>
+    <title>Listar Capacitaciones</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+
 </head>
 
 <body>
-    <div class="tablita">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+     git    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="crearcapacitacion.html">Agendar Capacitación</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="listarcapacitaciones.html">Listar Capacitación</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="listadousuarios.html">Listado De Usuarios</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="crearusuario.html">Crear Usuario</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="listadovisitas.html">Listado Visitas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="responderchecklist.html">Checklist</a>
+                </li>
+
+
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+
+
+            </form>
+        </div>
+    </nav>
+
+
+
+    <div class="tablita ">
         <fieldset>
             <legend>
-                <h2>Elija una capacitación</h2>
+                <h2><mark> Capacitación </mark></h2>
             </legend>
 
-            <select name="seleccion">
-        <option value="1">Correcto uso de extintores</option>
-        <option value="2">El uso de bloqueador solar</option>
-        <option value="3">Primeros auxilios</option>
-        <option value="4">¿Qué hacer en caso de incendio?</option>
-        <option value="5">Uso de vías de evacuación</option>
-        <option value="6">¿Qué hacer en caso de sismo?</option>
-        <option value="7">¿Qué hacer en caso de ahogamiento?</option>
-        <option value="8">Prevención COVID19</option>
-        <option value="9">Lucha contra incendios</option>
-        <option value="10">Triangulación de la vida</option>
+            <select name="seleccion ">
+        <option value="1 ">Correcto uso de extintores</option>
+        <option value="2 ">El uso de bloqueador solar</option>
+        <option value="3 ">Primeros auxilios</option>
+        <option value="4 ">¿Qué hacer en caso de incendio?</option>
+        <option value="5 ">Uso de vías de evacuación</option>
+        <option value="6 ">¿Qué hacer en caso de sismo?</option>
+        <option value="7 ">¿Qué hacer en caso de ahogamiento?</option>
+        <option value="8 ">Prevención COVID19</option>
+        <option value="9 ">Lucha contra incendios</option>
+        <option value="10 ">Triangulación de la vida</option>
              
     </select>
-            <input type="number" placeholder="ID Capacitación"> </input>
-            <input type="date" placeholder="Fecha Capacitación"> </input>
-            <input type="time" placeholder="Hora de Capacitación"> </input>
-            <input type="text" placeholder="Nombre del Cliente"> </input>
+            <input type="number " placeholder="ID Capacitación "> </input>
+            <input type="date " placeholder="Fecha Capacitación "> </input>
+            <input type="time " placeholder="Hora de Capacitación "> </input>
+            <input type="text " placeholder="Nombre del Cliente "> </input>
 
             <button>Enviar</button>
 
-            <table style="width:100%" border="1px solid black" id="tabla">
+            <table style="width:100% " border="1px solid black " id="tabla ">
                 <tr>
                     <th>ID Capacitación</th>
                     <th>Fecha de Capacitación</th>
@@ -106,22 +171,8 @@
             </table>
 
     </div>
-    <footer>
 
-        <navbar>
-            <ul>
-                <li><a href="index.html">PRINCIPAL</a></li>
-                <li><a href="contacto.html">CONTACTO</a> </li>
-                <li><a href="crearcapacitacion.html">AGENDAR CAPACITACIÓN</a></li>
-                <li><a href="listarcapacitaciones.html">LISTAR CAPACITACIÓN</a></li>
-                <li><a href="listadousuarios.html">LISTADO DE USUARIOS</a></li>
-                <li><a href="crearusuario.html">CREAR USUARIO</a></li>
-                <li><a href="listadovisitas.html">LISTADO VISITAS</a></li>
-                <li><a href="responderchecklist.html">CHECKLIST</a></li>
-            </ul>
-        </navbar>
 
-    </footer>
 </body>
 
 </html>
